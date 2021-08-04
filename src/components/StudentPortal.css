@@ -321,12 +321,12 @@ body {
   position: absolute;
   top:2100px;
   bottom: -.2rem; left: 0;
-  height:10rem;
+  height:15rem;
   width:100%;
   background:url(/src/images/shape.png);
   block-size:100rem 15rem;
   filter: drop-shadow(0 -.1rem .1rem rgba(0,0,0,.2));
-  animation: animate 15s linear infinite;
+  animation: animate 10s linear infinite;
   z-index:1;
 }
 
@@ -347,7 +347,7 @@ body {
   width:700px;
   height: 600px;
   padding:5px;
-  left:850px;
+  left:750px;
   /*margin:10px;*/
 }
 
