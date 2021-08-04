@@ -245,7 +245,6 @@ class Admin extends Component {
       <div>
       <div className = "adminBg"></div>
       <Navbar />
-      <Link className = "banner" >WESTVIEW JUNIOR SCHOOL </Link>
       <div  >
         <button className = "btn"  onClick={this.toggleHidden.bind(this)}>View Courses</button>
         {!this.state.isHidden && <CourseData />}

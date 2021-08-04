@@ -1,22 +1,73 @@
-
-
-.bg {
-  position: fixed; 
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+:root {
+  --primary: #fff;
 }
 
-.bg::before {    
-    content: "";
-    background-image: url(https://cdn4.vectorstock.com/i/1000x1000/31/58/alphabet-background-vector-553158.jpg);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.05;
+.butn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline:none;
+  border: none;
+  cursor: pointer;
 }
+
+/*
+const styling = {
+    webkitBordeRadius: "20px",
+    mozBorderRadius: "20px",
+    borderRadius: "6px",
+    color: "#0F9E94",
+    fontFamily: "Bebas Neue, cursive",
+    fontWeight:"bold",
+    fontSize: "20px",
+    padding: "15px",
+    /*backgroundColor:" #0F9E94",
+    backgroundColor: "transparent",
+    border: "solid #FFBE0F 5px",
+    textDecoration: "none",
+    display: "inline-block",
+    cursor:" pointer",
+    textAlign: "center",
+    left:"1350px",
+    position:"absolute",
+    top:"30px",
+    zIndex: "1",
+  }*/
+.butn--primary {
+  background-color: #0F9E94 ;
+  color: black;
+  border: solid #fff 5px;
+  font-family: Bebas Neue, cursive;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.butn--outline {
+  background-color: transparent;
+  color: #0F9E94;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+  border: solid #FFBE0F 5px;
+  font-family: Bebas Neue, cursive;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.butn--medium {
+  padding: 8px 20px;
+  font-size: 20px;
+}
+
+.butn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.butn--medium:hover,
+.butn--large:hover {
+  background: #0F9E94;
+  color: #242424;
+  transition: all 0.3s ease-out;
+}
+
+

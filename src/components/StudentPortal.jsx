@@ -19,7 +19,7 @@ import axios from 'axios';
 
 import TemporaryDrawer from "./sidebar";
 
-export default function StudentPortal() {
+export default function StudentPortal(props) {
 
 
   return (
@@ -30,8 +30,8 @@ export default function StudentPortal() {
       <div className = "Header"></div>
       <div className = "Avatar">
       <img src = {avatar} />
-<h3>Nimrah Altaf Adam</h3>
-<h4>ID:101</h4>
+<h3>{props.Name}</h3>
+<h4>{props.Grade}</h4>
 <h5>Grade:gradeObj</h5>
 <h6>School Name:schoolObj</h6>
 

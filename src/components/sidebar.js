@@ -93,7 +93,7 @@ export default function TemporaryDrawer() {
           
           <IconButton onClick={toggleDrawer("left", true)}>
           <img
-            style={{ zIndex:"1",width: "50px", height: "50px", borderRadius: "50px",left:"1360px", position:"absolute", top:"-110px"}}
+            style={{ zIndex:"1",width: "80px", height: "80px", borderRadius: "50px",left:"1160px", position:"absolute", top:"-110px"}}
             src={avatar}
           />
         </IconButton>

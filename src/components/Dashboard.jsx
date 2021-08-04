@@ -184,7 +184,7 @@ useEffect(() => {
 
 <div className = "portalBg"></div>
       <Navbar />
-      <Link className = "banner" >WESTVIEW JUNIOR SCHOOL </Link>
+      
 
 
 <div>
