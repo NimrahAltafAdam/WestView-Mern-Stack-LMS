@@ -36,7 +36,7 @@ useEffect(() => {
     
        
 
-           axios.get('http://localhost:7781/users/'+_id).then(
+           axios.get('https://westview-lms-mern.herokuapp.com/users/'+_id).then(
               (resadm)=>{
                 console.log("adminresponse "+ JSON.stringify(resadm.data))
                 if(resadm!=null){
@@ -58,7 +58,7 @@ useEffect(() => {
 
 
 
-            axios.get('http://localhost:7781/teachers/'+_id).then(
+            axios.get('https://westview-lms-mern.herokuapp.com/teachers/'+_id).then(
               (resteach)=>{
                 console.log("teachrrs response "+ JSON.stringify(resteach.data))
               if(resteach!=null){
@@ -90,7 +90,7 @@ useEffect(() => {
 
 
 
-            axios.get('http://localhost:7781/students/'+_id).then(
+            axios.get('https://westview-lms-mern.herokuapp.com/students/'+_id).then(
               (resstu)=>{
                 console.log("students response " + JSON.stringify(resstu.data))
 
