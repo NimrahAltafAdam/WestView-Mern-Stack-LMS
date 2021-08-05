@@ -8,7 +8,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
 
-import EditSharpIcon from '@material-ui/icons/EditSharp';
+
 import FaceSharpIcon from '@material-ui/icons/FaceSharp';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ClassRoundedIcon from '@material-ui/icons/ClassRounded';
@@ -27,7 +27,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function TemporaryDrawer() {
+export default function TemporaryDrawer(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     
@@ -55,6 +55,7 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+    <h2 className = "Status">{props.Status}</h2>
     <div className = "avatartwo">
     <img src = {avatar}  />
     </div>       
@@ -68,7 +69,7 @@ export default function TemporaryDrawer() {
           "Password: 101"
         ].map((text, index) => (
           <ListItem  button key={text}>
-            {index === 0 && <FaceSharpIcon />} 
+            {index === 0 && <FaceSharpIcon style = {{zIndex:"1"}} />} 
             {index === 1 && <AccountCircleIcon />}
             
             {index === 2 && <ClassRoundedIcon />}

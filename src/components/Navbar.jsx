@@ -57,11 +57,11 @@ function Navbar() {
 
                <li className = "nav-item">
                    <Link to = "/login" className = "nav-links-mobile" onClick = {closeMobileMenu} style = {{color:"#6DDCCF",textDecoration: "none"}}>
-                       Sign Up
+                       Sign In
                    </Link>
                </li>
            </ul>
-           {button && <Button buttonStyle = "butn--outline">SIGN UP</Button>}
+           {button && <Button buttonStyle = "butn--outline">SIGN IN</Button>}
            </div>
        </nav>
        </>

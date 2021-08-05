@@ -7,6 +7,7 @@ import Footer from "../Footer";
 import Slider from '../3D_slider';
 
 
+
 function Home() {
   return (
     <>

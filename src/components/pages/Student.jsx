@@ -5,9 +5,10 @@ import axios from 'axios';
 import React, {useEffect, useState } from 'react';
 import {Link} from "react-router-dom";
 import "../Navbar.css";
+import Note from "../Note";
+import CreateArea from "../CreateArea";
 
 import Dashboard from "../Dashboard";
-
 function Student(props) {
   
 
@@ -154,14 +155,16 @@ useEffect(() => {
 //  }),[]
 })
 
-
   return (
     <div>
        <div className = "portalBg"></div>
       <Navbar />
       {/* <StudentPortal /> */}
       <StudentPortal Name = {name} Grade = {grade} Status = {status}/>
+
+     
     </div>
+
   )
 }
 

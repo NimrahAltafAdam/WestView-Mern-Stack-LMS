@@ -7,7 +7,7 @@ import {NavLink} from 'react-router-dom';
 // import {Route,Switch,Router} from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Quiz from "./components/Quiz";
-import PortalPage from "./components/PortalPage.jsx"
+
 
 import Modelgen from './components/Modal';
 import Student from "./components/pages/Student"
@@ -15,6 +15,7 @@ import Admin from "./components/pages/Admin";
 import Contactus from "./components/Contactus";
 import Aboutus from "./components/Aboutus";
 import Errorfourzerofour from './components/Error';
+import NotesSection from "./components/NotesSection"
 
 import StudentPortal from "./components/StudentPortal";
 
@@ -35,7 +36,10 @@ function App() {
                  <Route exact path='/contact-us' component={Contactus}/> 
                  <Route exact path='/about-us' component={Aboutus}/> 
                  <Route exact path='/about' component={Aboutus}/>
+                 <Route exact path='/NotesSection' component={NotesSection}/>
                 
+
+                 
                  {/* <Route exact path='/dashboard/:id/studentPortal' component={Student}/>  */}
                  {/* <Route exact path='/student' component={Student}/> */}
                  <Route exact path='/admin/:id' component={Admin}/>
